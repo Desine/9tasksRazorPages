@@ -1,0 +1,18 @@
+﻿@page
+@model RestaurantModel
+@{
+    ViewData["Title"] = "9 tasks for f sake";
+}
+
+<h1>Restaurant</h1>
+<p>Name: <strong>@Model.Name</strong></p>
+<p>Location: <strong>@Model.Location</strong></p>
+
+<a class="menu" href="/Menu">Menu</a>
+
+
+<style>
+    .menu {
+        font-size: 70px;
+    }
+</style>

@@ -1,0 +1,28 @@
+﻿@page
+@model SongModel
+@{
+    ViewData["Title"] = "9 tasks for f sake";
+}
+
+<h1>Singa Songa</h1>
+
+<p>Name: @Model.EpickSong.Name</p>
+<p>Author: @Model.EpickSong.Author</p>
+<p>Year: @Model.EpickSong.Year</p>
+<p>Text: @Model.EpickSong.Text</p>
+
+<style>
+    .restaurants {
+        background: lightblue;
+        border: 20px double pink;
+        border-radius: 20px;
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+    }
+    .song{
+        font-size: 70px;
+    }
+</style>

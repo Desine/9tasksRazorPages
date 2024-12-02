@@ -1,0 +1,28 @@
+﻿@page
+@model ChessModel
+@{
+    ViewData["Title"] = "9 tasks for f sake";
+}
+
+<h1>Chess</h1>
+
+
+<ul class="chess">
+    <h1>figures</h1>
+    @foreach(var info in Model.PiecesInfo){
+        <li>@info</li>
+    }
+</ul>
+
+<style>
+    .drinks {
+        background: lightcyan;
+        border: 10px dashed lightseagreen;
+        border-radius: 10px;
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+    }
+</style>

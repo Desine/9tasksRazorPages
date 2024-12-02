@@ -1,0 +1,40 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "9 tasks for f sake";
+}
+
+<h1>Welcome</h1>
+<p>номер текущего дня в году: <strong>@Model.DayOfYear</strong></p>
+<p>любую букву из английского алфавита: <strong>@Model.RandomChar</strong></p>
+
+
+<ul class="restaurants">
+    <h1>Restaurants</h1>
+    <li><a href="/Restaurant">But Scrubs</a></li>
+    <li><a href="/Restaurant">Fat Fugs</a></li>
+    <li><a href="/Restaurant">Double Pigs</a></li>
+</ul>
+
+<a class="song" href="/Song">Song</a>
+<p></p>
+<a class="chess" href="/Chess">Chess</a>
+
+<style>
+    .restaurants {
+        background: lightblue;
+        border: 20px double pink;
+        border-radius: 20px;
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+    }
+    .song{
+        font-size: 70px;
+    }
+    .chess{
+        font-size: 70px;
+    }
+</style>
